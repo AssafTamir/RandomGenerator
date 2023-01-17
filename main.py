@@ -1,9 +1,10 @@
 import random
+import string
 
-numbers = '0123456789'
-letters_lower = 'abcdefghijklmnopqrstuvwxyz'
+numbers = string.digits
+letters_lower = string.ascii_lowercase
 letters_upper = letters_lower.upper()
-simbols = '!@#$%^&*()_-/.'
+simbols = string.punctuation
 char_types = [numbers, letters_upper, letters_lower, simbols]
 all_chars = numbers + letters_upper + letters_lower + simbols
 
